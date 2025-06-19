@@ -2,16 +2,34 @@
 <?xml-stylesheet type="text/xsl" href="../Estilo/e.colegio"?>
 
 <alumnos>
-    
-    <alumno>
-    
+
+    <alumno NDA="a001">
+        <nombre></nombre>
+        <apellido1></apellido1>
+        <apellido2></apellido2>
+        <edad></edad>
+        <curso></curso>
+        <N.contacto></N.contacto>
+        
     </alumno>
     
-    <alumno>
+    <alumno NDA="a002">
+        <nombre></nombre>
+        <apellido1></apellido1>
+        <apellido2></apellido2>
+        <edad></edad>
+        <curso></curso>
+        <N.contacto></N.contacto>
 
     </alumno>
 
-    <alumno>
+    <alumno NDA="a003">
+        <nombre></nombre>
+        <apellido1></apellido1>
+        <apellido2></apellido2>
+        <edad></edad>
+        <curso></curso>
+        <N.contacto></N.contacto>
 
     </alumno>
 
@@ -20,31 +38,55 @@
 <profesores>
 
     <profesor>
-
+        <nombre></nombre>
+        <apellido1></apellido1>
+        <apellido2></apellido2>
+        <Departamento></Departamento>
+        <N.contacto></N.contacto>
+        <Email></Email>
     </profesor>
 
     <profesor>
-
+        <nombre></nombre>
+        <apellido1></apellido1>
+        <apellido2></apellido2>
+        <Departamento></Departamento>
+        <N.contacto></N.contacto>
+        <Email></Email>
     </profesor>
 
     <profesor>
-
+        <nombre></nombre>
+        <apellido1></apellido1>
+        <apellido2></apellido2>
+        <Departamento></Departamento>
+        <N.contacto></N.contacto>
+        <Email></Email>
     </profesor>
 
 </profesores>
 
 <asignaturas>
 
-    <asignatura>
-
+    <asignatura NIDA="LEN001">
+        <nombre></nombre>
+        <curso></curso>
+        <libros></libros>
+        <programación></programación>
     </asignatura>
 
-    <asignatura>
-        
+    <asignatura NIDA="MAT001">
+        <nombre></nombre>
+        <curso></curso>
+        <libros></libros>
+        <programación></programación>
     </asignatura>
 
-    <asignatura>
-
+    <asignatura NIDA="FIS001">
+    <nombre></nombre>
+        <curso></curso>
+        <libros></libros>
+        <programación></programación>
     </asignatura>
 
 </asignaturas>
