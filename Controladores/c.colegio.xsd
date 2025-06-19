@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <!-- Restricciones -->
+    <xs:simpleType name="EXPType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{1}[0-9]{3}"/>
+        </xs:restriction> 
+    </xs:simpleType>
+    <xs:simpleType name="CIDPType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]{1}[0-9]{3}"/>
+        </xs:restriction> 
+    </xs:simpleType>
+    <xs:simpleType name="NIDAType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{3}[0-9]{3}"/>
+        </xs:restriction> 
+    </xs:simpleType>
+    <xs:simpleType name="cursoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[ESO][ ][º][1-4][A-D]"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="cursosType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[1ºESO, 2ºESO, 3ºESO, 4ºESO]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+ <!-- Elemento Raíz -->
+   
+
+    
+
+
+</xs:schema>
