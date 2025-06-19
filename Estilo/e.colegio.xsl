@@ -31,7 +31,7 @@
               <tbody>
                 <xsl:for-each select="colegio/alumnos/alumno">
                     <tr>
-                        <td><xsl:value-of select="EXP"/></td>
+                        <td><xsl:value-of select="@EXP"/></td>
                         <td><xsl:value-of select="nombre"/></td>
                         <td><xsl:value-of select="apellido1"/></td>
                         <td><xsl:value-of select="apellido2"/></td>
@@ -60,13 +60,15 @@
                 </thead>
                 <tbody>
                     <xsl:for-each select="colegio/profesores/profesor">
-                         <td><xsl:value-of select="CIDP"/></td>
+                      <tr>
+                         <td><xsl:value-of select="@CIDP"/></td>
                          <td><xsl:value-of select="nombre"/></td>
                          <td><xsl:value-of select="apellido1"/></td>
                          <td><xsl:value-of select="apellido2"/></td>
                          <td><xsl:value-of select="Departamento"/></td>
                          <td><xsl:value-of select="N.contacto"/></td>
                          <td><xsl:value-of select="Email"/></td>
+                        </tr>
                     </xsl:for-each>
                 </tbody>
             </table>
@@ -88,7 +90,7 @@
                 <tbody>
                      <xsl:for-each select="colegio/asignaturas/asignatura">
                      <tr>
-                        <td><xsl:value-of select="NIDA"/></td>
+                        <td><xsl:value-of select="@NIDA"/></td>
                         <td><xsl:value-of select="nombre"/></td>
                         <td><xsl:value-of select="cursos"/></td>
                      <td>
