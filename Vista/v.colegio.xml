@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../Estilo/e.colegio"?>
+
+<alumnos>
+    
+    <alumno>
+    
+    </alumno>
+    
+    <alumno>
+
+    </alumno>
+
+    <alumno>
+
+    </alumno>
+
+</alumnos>
+
+<profesores>
+
+    <profesor>
+
+    </profesor>
+
+    <profesor>
+
+    </profesor>
+
+    <profesor>
+
+    </profesor>
+
+</profesores>
+
+<asignaturas>
+
+    <asignatura>
+
+    </asignatura>
+
+    <asignatura>
+        
+    </asignatura>
+
+    <asignatura>
+
+    </asignatura>
+
+</asignaturas>
