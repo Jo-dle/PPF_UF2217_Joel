@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="container mt-5">
-            <h1> class="mb-4" Listado De Alumnos</h1>
+            <h1 class="mb-4">  Listado De Alumnos</h1>
 
             <table class="table table-bordered table-striped">
               <thead class="table-dark">
@@ -43,6 +43,78 @@
               </tbody>
             </table>
         </div>
+        <div class="container mt-5">
+            <h1 class="mb-4">Listado De Profesores</h1>
+
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>CIDP</th>
+                        <th>Nombre</th>
+                        <th>Primer Apellido</th>
+                        <th>Segundo Apellido</th>
+                        <th>Departamento</th>
+                        <th>Número De Contacto</th>
+                        <th>Correo Electrónico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <xsl:for-each select="colegio/profesores/profesor">
+                         <td><xsl:value-of select="CIDP"/></td>
+                         <td><xsl:value-of select="nombre"/></td>
+                         <td><xsl:value-of select="apellido1"/></td>
+                         <td><xsl:value-of select="apellido2"/></td>
+                         <td><xsl:value-of select="Departamento"/></td>
+                         <td><xsl:value-of select="N.contacto"/></td>
+                         <td><xsl:value-of select="Email"/></td>
+                    </xsl:for-each>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="container mt-5">
+            <h1 class="mb-4">Detalles De Asignaturas</h1>
+            
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Identificador</th>
+                        <th>Nombre</th>
+                        <th>Cursos Aplicables</th>
+                        <th>Libros</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                     <xsl:for-each select="colegio/asignaturas/asignatura">
+                     <tr>
+                        <td><xsl:value-of select="NIDA"/></td>
+                        <td><xsl:value-of select="nombre"/></td>
+                        <td><xsl:value-of select="cursos"/></td>
+                     <td>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Nombre del Libro</th>
+                                    <th>Editorial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <xsl:for-each select="libros/libro">
+                                    <tr>
+                                        <td><xsl:value-of select="nombre"/></td>
+                                        <td><xsl:value-of select="editorial"/></td>
+                                    </tr>
+                                </xsl:for-each>
+                            </tbody>
+                        </table>
+                      </td>
+                     </tr> 
+                    </xsl:for-each>      
+                </tbody>
+            </table>
+            
+        </div>    
     </body>
   </html>
 
