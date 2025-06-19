@@ -26,8 +26,85 @@
             <xs:pattern value="[1ºESO, 2ºESO, 3ºESO, 4ºESO]+"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="departamentoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[Informática][Filosofía][Lengua][Matemática]"/>
+        </xs:restriction>
+    </xs:simpleType>
  <!-- Elemento Raíz -->
-   
+   <xs:element name="colegio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="alumnos" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="alumno" maxOccurs="unbounded">
+                         <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="EXP" type="EXPType"/>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="apellido1" type="xs:string"/>
+                            <xs:element name="apellido2" type="xs:string"/>
+                            <xs:element name="edad" type="xs:string"/>
+                            <xs:element name="curso" type="cursoType"/>
+                            <xs:element name="N.contacto" type="xs:string"/>
+                          </xs:sequence>
+                         </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="profesores">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="profesor" maxOccurs="unbounded">
+                                <xs:complexType>
+                                  <xs:sequence>
+                                    <xs:element name="CIDP" type="CIDPType"/>
+                                    <xs:element name="nombre" type="xs:string"/>
+                                    <xs:element name="apellido1" type="xs:string"/>
+                                    <xs:element name="apellido2" type="xs:string"/>
+                                    <xs:element name="Departamento" type="departamentoType"/>
+                                    <xs:element name="N.contacto" type="xs:string"/>
+                                    <xs:element name="Email" type="xs:string"/>
+                                  </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="asignaturas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="asginatura" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="NIDA" type="NIDAType"/>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="cursos" type="cursosType"/>
+                                        <xs:element name="libros" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="libro">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="nombre" type="xs:string"/>
+                                                                <xs:element name="editorial" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+   </xs:element>
 
     
 
