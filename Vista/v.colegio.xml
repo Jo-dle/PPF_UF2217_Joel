@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Estilo/e.colegio"?>
-
-<colegio>
+ <colegio  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../Controladores/c.colegio.xsd">
     <alumnos>
 
         <alumno EXP="A001">
@@ -133,5 +132,4 @@
           </libros>
         </asignatura>
     </asignaturas>
-
 </colegio>
