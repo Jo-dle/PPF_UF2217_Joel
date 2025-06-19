@@ -1,92 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../Estilo/e.colegio"?>
 
-<alumnos>
+<colegio>
+    <alumnos>
 
-    <alumno NDA="a001">
-        <nombre></nombre>
-        <apellido1></apellido1>
-        <apellido2></apellido2>
-        <edad></edad>
-        <curso></curso>
-        <N.contacto></N.contacto>
+        <alumno EXP="A001">
+         <nombre>Alberto</nombre>
+         <apellido1>Rodrígez</apellido1>
+         <apellido2>Almeída</apellido2>
+         <edad>12</edad>
+         <curso>ESO 1ºA</curso>
+         <N.contacto>928112233</N.contacto>
         
-    </alumno>
+        </alumno>
     
-    <alumno NDA="a002">
-        <nombre></nombre>
-        <apellido1></apellido1>
-        <apellido2></apellido2>
-        <edad></edad>
-        <curso></curso>
-        <N.contacto></N.contacto>
+        <alumno EXP="A002">
+         <nombre>Juan</nombre>
+         <apellido1>Cuba</apellido1>
+         <apellido2>Puerto Rico</apellido2>
+         <edad>13</edad>
+         <curso>ESO 2ºC</curso>
+         <N.contacto>928223344</N.contacto>
 
-    </alumno>
+        </alumno>
 
-    <alumno NDA="a003">
-        <nombre></nombre>
-        <apellido1></apellido1>
-        <apellido2></apellido2>
-        <edad></edad>
-        <curso></curso>
-        <N.contacto></N.contacto>
+        <alumno EXP="A003">
+         <nombre>María</nombre>
+         <apellido1>Del Pino</apellido1>
+         <apellido2>Del Río</apellido2>
+         <edad>12</edad>
+         <curso>ESO 1ºC</curso>
+         <N.contacto>928334455</N.contacto>
 
-    </alumno>
+        </alumno>
 
-</alumnos>
+    </alumnos>
 
-<profesores>
+    <profesores>
 
-    <profesor>
-        <nombre></nombre>
-        <apellido1></apellido1>
-        <apellido2></apellido2>
-        <Departamento></Departamento>
-        <N.contacto></N.contacto>
-        <Email></Email>
-    </profesor>
+        <profesor CIDP="a001">
+         <nombre>Constantino</nombre>
+         <apellido1>Lantigua</apellido1>
+         <apellido2>Calderín</apellido2>
+         <Departamento>Informática</Departamento>
+         <N.contacto>633785492</N.contacto>
+         <Email>Lantigua@gmail.com</Email>
+        </profesor>
 
-    <profesor>
-        <nombre></nombre>
-        <apellido1></apellido1>
-        <apellido2></apellido2>
-        <Departamento></Departamento>
-        <N.contacto></N.contacto>
-        <Email></Email>
-    </profesor>
+        <profesor CIDP="a002">
+         <nombre>Jose Juan</nombre>
+         <apellido1>Jorge</apellido1>
+         <apellido2>Sosa</apellido2>
+         <Departamento>Filosofía</Departamento>
+         <N.contacto>635653365</N.contacto>
+         <Email>JJSosa@gmail.com</Email>
+        </profesor>
 
-    <profesor>
-        <nombre></nombre>
-        <apellido1></apellido1>
-        <apellido2></apellido2>
-        <Departamento></Departamento>
-        <N.contacto></N.contacto>
-        <Email></Email>
-    </profesor>
+        <profesor CIDP="a003">
+         <nombre>Neftalí</nombre>
+         <apellido1>De Jesús</apellido1>
+         <apellido2>Espíno</apellido2>
+         <Departamento>Lengua</Departamento>
+         <N.contacto>636539657</N.contacto>
+         <Email>Antonio@hotmail.nicaragua.com</Email>
+     </profesor>
 
-</profesores>
+    </profesores>
 
-<asignaturas>
+    <asignaturas>
 
-    <asignatura NIDA="LEN001">
-        <nombre></nombre>
-        <curso></curso>
-        <libros></libros>
-        <programación></programación>
-    </asignatura>
+        <asignatura NIDA="LEN001">
+         <nombre>Lengua Española</nombre>
+         <cursos>1ºESO, 2ºESO, 3ºESO, 4ºESO</cursos>
+         <libros>
+            <libro>
+                <nombre>Principios De La Lengua Española</nombre>
+                <editorial>Len.CA</editorial>
+            </libro>
+                
+            <libro>
+                <nombre>Como ser profesor de lengua con dislexia</nombre>
+                <editorial>Len.CA</editorial>
+            </libro>
+         </libros>
+        </asignatura>
 
-    <asignatura NIDA="MAT001">
-        <nombre></nombre>
-        <curso></curso>
-        <libros></libros>
-        <programación></programación>
-    </asignatura>
+        <asignatura NIDA="MAT001">
+         <nombre>Matemáticas</nombre>
+         <cursos>1ºESO, 2ºESO, 3ºESO, 4ºESO</cursos>
+         <libros>
+             <libro>
+                <nombre>Matemáticas simples</nombre>
+                <editorial>Mat.CA</editorial>
+            </libro>
+                
+            <libro>
+                <nombre>Funciones Y Polinómios</nombre>
+                <editorial>Mat.CA</editorial>
+            </libro>
+         </libros>
+        </asignatura>
 
-    <asignatura NIDA="FIS001">
-    <nombre></nombre>
-        <curso></curso>
-        <libros></libros>
-        <programación></programación>
-    </asignatura>
+        <asignatura NIDA="FIL001">
+          <nombre>Filosofía Moderna Y Pensamiento Crítico</nombre>
+          <cursos>4ºESO</cursos>
+          <libros>
+             <libro>
+                <nombre>Perro Sanches ¿Reptiliano O Comunista?</nombre>
+                <editorial>Fil.CA</editorial>
+            </libro>
+                
+            <libro>
+                <nombre>La Tecnología Y el Control Mental de los gobiernos</nombre>
+                <editorial>Fil.CA</editorial>
+            </libro>
+          </libros>
+        </asignatura>
 
-</asignaturas>
+        <asignatura NIDA="INF001">
+          <nombre>Tecnologías De La Información</nombre>
+          <cursos>2ºESO, 3ºESO, 4ºESO</cursos>
+          <libros>
+             <libro>
+                <nombre>Prevención Del Suicidio En Informáticos</nombre>
+                <editorial>Inf.CA</editorial>
+            </libro>
+                
+            <libro>
+                <nombre>Fundamentos De PHP, HTML y SQL</nombre>
+                <editorial>Inf.CA</editorial>
+            </libro>
+          </libros>
+        </asignatura>
+    </asignaturas>
+
+</colegio>
