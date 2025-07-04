@@ -2,15 +2,8 @@
 
 ## Objetivo
 
-Lo principal es demostrar que se crear un documento XML con todas sus dependencias (XSD,XSL) y dar unos estilos que permitan la legibilidad
-
-## Objetivos Opcionales
-
-Como extra se puede intentar añadir un CRUD básico al documento
+El objetivo principal es crear un proyecto xml con todas sus dependencias (xsd y xsl) légible y crear una base de formularios para poder implementar php más adelante para que sean funcionales 
 
 ### Funcionalidades del Código
 
-En el código hemos creado las tablas con los datos, las validamos en el documento XSD y les ponemos un estilo para desde el archivo XSL, además añadimos unos menos desplegables en todas las tablas incluyendo la subtabla de libros
-
-### Extra
-El CRUD está en la rama dentro de este proyecto con el mismo nombre sin embargo está en una versión Alpha
+En el código hemos creado las tablas con los datos, las validamos en el documento XSD y les ponemos un estilo para desde el archivo XSL, organizando cada tabla en su propia pestaña con un formulario de creación básico para poder implementar php en el futuro y volverlo funcional
