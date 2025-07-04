@@ -33,7 +33,38 @@
 
   <!-- Tab Alumnos -->
   <div class="tab-pane fade show active" id="alumnos" role="tabpanel" aria-labelledby="nav-Alumnos-tab">
+    
     <h2 class="mb-0">Listado De Alumnos</h2>
+    <!--Agregar Alumnos-->
+    <h3 class="mt-4">Añadir Nuevo Alumno</h3>
+    <div class="col-md-4">
+        <label class="form-label">Expediente</label>
+        <input type="text" name="EXP" class="form-control"/>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label">Nombre</label>
+        <input type="text" name="nombre" class="form-control"/>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label">Primer Apellido</label>
+        <input type="text" name="apellido1" class="form-control"/>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label">Segundo Apellido</label>
+        <input type="text" name="apellido2" class="form-control"/>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label">Edad</label>
+        <input type="text" name="edad" class="form-control"/>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label">Curso</label>
+        <input type="text" name="curso" class="form-control"/>
+    </div>
+    <div class="col-md-4">
+        <label class="form-label">Número De Contacto</label>
+        <input type="number" name="tlf" class="form-control"/>
+    </div>
     <table id="tablaAlumnos" class="table table-bordered table-striped">
       <thead class="table-dark">
         <tr>
